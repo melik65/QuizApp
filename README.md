@@ -26,3 +26,8 @@ soruların cevaplarını verir ve bitir butonuna tıklar.
 
 sayfa yenilenmez ve doğru cevaplar görünür.
 doğru işaretlenmişse yeşil ile boyanır, yanlış işaretlenmişse kırmızıya boyanır ve doğru cevap gösterilir.
+
+sınav silinebilir
+
+yeni sınav oluşturulabilir
+
