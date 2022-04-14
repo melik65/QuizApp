@@ -14,7 +14,7 @@ not : uygulamanın çalışan haliyle çekilen bir videosunun linkini aşağıda
 
 link : https://vimeo.com/699565344
 
-NASIL ÇALIŞIR?
+# NASIL ÇALIŞIR?
 
 kullanıcı giriş yapar.
 
