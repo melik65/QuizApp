@@ -1,0 +1,26 @@
+﻿@model MelikCirak.EntityLayer.Concrete.User
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="w-25" style="margin:15px auto;">
+    @if (ViewBag.error != null)
+    {
+        <div class="alert alert-danger mb-1">
+            @ViewBag.error
+        </div>
+    }
+    <form asp-action="UserLogin" method="post">
+        <div class="mb-3">
+            <label for="Mail" class="form-label">Mail</label>
+            <input asp-for="Mail" type="email" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Şifre</label>
+            <input asp-for="Password" type="password" class="form-control" required/>
+        </div>
+        <button type="submit" class="btn btn-primary">Giriş</button>
+    </form>
+</div>

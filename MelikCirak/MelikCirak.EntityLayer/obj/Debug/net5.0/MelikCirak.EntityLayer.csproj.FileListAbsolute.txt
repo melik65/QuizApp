@@ -1,0 +1,12 @@
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\bin\Debug\net5.0\MelikCirak.EntityLayer.deps.json
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\bin\Debug\net5.0\MelikCirak.EntityLayer.dll
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\bin\Debug\net5.0\ref\MelikCirak.EntityLayer.dll
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\bin\Debug\net5.0\MelikCirak.EntityLayer.pdb
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.AssemblyInfo.cs
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.dll
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\ref\MelikCirak.EntityLayer.dll
+C:\Users\melik\Desktop\Konuşarak Öğren\MelikCirak\MelikCirak.EntityLayer\obj\Debug\net5.0\MelikCirak.EntityLayer.pdb

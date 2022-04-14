@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MelikCirak.EntityLayer.Concrete.Quiz>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Sınav Oluştur</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>
+                Başlık
+            </th>
+            <th>
+                Tarih
+            </th>
+            <th>
+                Sınavı Başlat
+            </th>
+            <th>
+                Sil
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreateDate)
+                </td>
+                <td>
+                    <a asp-action="Start" asp-route-id="@item.Id" class="btn btn-success">Başla</a>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

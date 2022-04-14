@@ -1,0 +1,56 @@
+﻿@model MelikCirak.EntityLayer.Concrete.Quiz
+
+@{
+    ViewData["Title"] = "Start";
+}
+@section Styles{
+	    <style type="text/css">
+    	.opt{
+    		padding: 3px;
+    		margin: 3px 0;
+    	}
+    	.opt:hover{
+    		cursor: pointer;
+    	}
+    	#btnBitir{
+    		width: 150px;
+
+    		margin: 10px auto;
+    	}
+    </style>
+}
+<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">@Model.Title</h1>
+				<p class="p3 mt-2">
+					@Model.Content
+				</p>
+			</div>
+			@foreach(var item in ViewBag.Questions){
+				<div class="col-6 p-3">
+					<h2>@item.QuestionContent</h2>
+					@foreach(var option in item.Options){
+						if(option.IsAnswer==true){
+							<div class="opt" qd="true" qselected="false">
+								@option.OptionContent
+							</div>
+						}
+						else{
+							<div class="opt" qd="false" qselected="false">
+								@option.OptionContent
+							</div>
+						}
+						
+					}
+				</div>
+			}
+			
+			<button class="btn btn-primary mt-1" id="btnBitir">Sınavı tamamla</button>
+		</div> 
+	</div>
+
+
+@section Scripts{
+<script src="~/js/start.js"></script>
+}

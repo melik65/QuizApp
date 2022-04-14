@@ -1,0 +1,71 @@
+﻿@model MelikCirak.EntityLayer.Concrete.Quiz
+
+@{
+    ViewData["Title"] = "Sınav Oluştur.";
+}
+
+<div class="container">
+    <form class="frm1" action="/quiz/create" method="post">
+        <input type="hidden" name="Title" id="QTitle" />
+        <div class="row">
+            <div class="col-12">
+                <h1>Yazı</h1>
+            </div>
+
+            <div class="col-12">
+                <div id="showDiv"></div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea name="QContent" class="form-control" placeholder="yazı" style="height: 200px" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Yazı</label>
+                </div>
+            </div>
+            <div class="col-12">
+
+                @for (int i = 0; i < 4; i++)
+                {
+                    <div class="row">
+                        <div class="col-12 mb-1">
+                            <div>Soru @(i+1)</div>
+                            <input type="text" name="Questions[@i].QuestionContent" class="form-control" value="">
+                        </div>
+                        <div class="col-6 mb-1">
+                            <input type="text" name="Questions[@i].Options[0].OptionContent" placeholder="A )" class="form-control" value="">
+                        </div>
+                        <div class="col-6 mb-1">
+                            <input type="text" name="Questions[@i].Options[1].OptionContent" placeholder="B )" class="form-control" value="">
+                        </div>
+                        <div class="col-6 mb-1">
+                            <input type="text" name="Questions[@i].Options[2].OptionContent" placeholder="C )" class="form-control" value="">
+                        </div>
+                        <div class="col-6 mb-1">
+                            <input type="text" name="Questions[@i].Options[3].OptionContent" placeholder="D )" class="form-control" value="">
+                        </div>
+                        <div class="col-12 text-center mt-1">
+                            <select class="" name="Questions[@i].RightOptionIndex">
+                                <option value="None" selected>Doğru cevabı seçin</option>
+                                <option value="0">A</option>
+                                <option value="1">B</option>
+                                <option value="2">C</option>
+                                <option value="3">D</option>
+                            </select>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <button type="submit" id="btnSubmit" class="btn btn-primary">gonder</button>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+<script src="~/js/create.js"></script>
+}
