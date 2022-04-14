@@ -8,7 +8,6 @@ namespace MelikCirak.DataAcessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("server=.;database=DbKonusarakOgren;integrated security=true");
             optionsBuilder.UseSqlite("Data Source=DbKonusarakOgren.db;");
         }
         public DbSet<User> Users { get; set; }
